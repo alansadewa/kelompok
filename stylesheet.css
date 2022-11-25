@@ -4,7 +4,7 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /*background-image:linear-gradient(to right, #FDE7F9, #90D5EC);*/
-    background-image:linear-gradient(to left, #087EE1, #05E8BA);
+    background-image:linear-gradient(to left, #90D5EC, #05E8BA);
     margin: 0;
 }
 
@@ -168,10 +168,6 @@ body{
 
     .column2 .atas1{
         margin: 30px auto;
-    }
-    
-    body{
-        background-image:linear-gradient(to left, #90D5EC, #05E8BA);;
     }
     
 }
