@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:linear-gradient(to right, #FDE7F9, #90D5EC);
+    margin: 0;
+}
+
+.container{
+    margin: 30px 20px;
+}
+.navbar{
+    display: flex;
+    margin: 20px 0px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 8px;
+}
+
+.left{
+    flex-grow: 5;
+}
+
+/* hEADER */
+.header{
+    padding: 20px;
+    background-image: linear-gradient(to right, #14557B, #04619F);
+    color: white; 
+    margin-top: 30px;  
+    text-align: center;
+    border:1px solid black;
+}
+
+/* Content */
+
+.content{
+    margin-top: 20px;
+}
+.content:after{
+
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+.column1{
+    float: left;
+    width: 65%;
+    margin-left: 5%;
+}
+
+.column2{
+    float:left;
+    width: 25%;
+    margin-left: 5%;
+
+}
+
+.fleex{
+    display: flex;
+
+
+}
+.fleex .colum1{
+    padding: 10px;
+}
+.fleex img{
+    width: 100%;
+    border-radius: 15px;
+    height: 113px;
+}
+
+.bawah .atas img{
+    float: left;
+    width: 80px;
+    margin: 20px 20px;
+}
+
+.bawah{
+    display: flex;
+    flex-direction: column;
+}
+
+.column2 .atas1{
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.footer{
+    margin-top: 200px;
+    padding: 2px 0px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/* For Responsive */
+
+@media screen and (min-width: 1500px){
+    .fleex img{
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .fleex{
+        flex-direction: column;
+    }
+
+
+    .column1 {
+        width: 60%;
+        margin: 0;
+
+    }
+
+    .column1 img{
+        width: 90%;
+        height: auto;
+    }
+
+    .column2{
+        width: 30%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width:853px) {
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar .right{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 852px) {
+    .column1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .navbar .left a {
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .bawah .atas{
+        margin: 30px auto;
+    }
+
+    .column2 .atas1{
+        margin: 30px auto;
+    }
+
+    
+}
+
+@media screen and (max-width:1099px){
+    .footer{
+        position: static;
+    }
+    
+}
+
+@media screen and (min-width: 1174px) {
+    .footer{
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }
+    
+}
